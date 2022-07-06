@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    /* outline: 1px solid red; */
+}
+
+header{
+    background-color: rgb(255, 184, 18);
+    color: white;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.333);
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 999;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    height: 70px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand{
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav input{
+    opacity: 0;
+}
+
+nav ul li{
+    margin-left: 7px;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+nav ul li a{
+    padding: 10px 5px;
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+nav ul li:hover{
+    background-color: #ff9d00;
+}
+
+nav .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .button a{
+    background-color: rgb(255, 81, 0);
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav .button a:hover{
+    box-shadow: 0 0 7px rgb(255, 106, 0);
+}
+
+/* Main */
+
+section#home{
+    padding: 50px 0;
+    background-color: #3F4E4F;
+    margin-top: 70px;
+}
+
+svg{
+    transform: rotate(180deg);
+    margin-top: -2px;
+}
+
+section#home .container{
+    display: flex;
+}
+
+#home .image{
+    width: 50%;
+}
+
+#home .image img{
+    width: 320px;
+}
+
+#home .description{
+    padding: 20px 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+}
+
+#home .description h1{
+    font-size: 32px;
+}
+
+#home .description h2{
+    font-size: 18px;
+}
+
+#home .description p{
+    font-size: 16px;
+}
+
+#home .description .button{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#home .description .button a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 7px;
+    border: 2px solid #ffffff;
+    transition: all 0.3s ease;
+}
+
+#home .description .button a:hover{
+    background-color: #ffffff;
+    color: #3F4E4F;
+}
+
+/* Service */
+#service{
+    background-color: white;
+    width: 100%; 
+    padding: 30px 0;
+    margin-top: -100px;
+}
+
+#service h1{
+    text-align: center;
+    font-size: 32px;
+}
+
+.we-service{
+    display: flex;
+    margin-top: 30px;
+}
+
+.we-service article{
+    border: 1px solid rgb(255, 184, 18);
+    padding: 20px;
+    border-radius: 7px;
+    transition: all 0.3s ease-in-out;
+    width: 30%;
+    margin: 0 10px;
+}
+
+.we-service article:hover{
+    transform: translate(0, -15px) scale(1.025);
+    box-shadow: 0 0 8px rgb(255, 184, 18);
+}
+
+.we-service article h3,
+.we-service article p,
+.we-service article h4{
+    text-align: center;
+}
+
+.we-service article h3{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 26px;
+}
+
+.we-service article h4{
+    margin: 20px 0;
+    color: orange;
+}
+
+.we-service article h4 span{
+    color: black;
+}
+
+.we-service ul li{
+    margin: 15px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.we-service ul li i{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: block;
+    background-color: rgb(255, 184, 18);
+    margin-right: 10px;
+}
+
+.we-service a{
+    margin: 40px auto 20px auto;
+    text-align: center;
+    display: block;
+    width: 100px;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: orange;
+    font-weight: 600;
+    border-radius: 25px;
+    border: 1px solid rgb(255, 184, 18);
+    transition: all 0.2s ease;
+}
+
+.we-service a:hover{
+    background-color: rgb(255, 184, 18);
+    color: white;
+}
+
+/* Portfolio */
+section#portfolio{
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+    background-position-y: -200px;
+    padding: 20px 0;
+}
+
+section#portfolio .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section#portfolio img{
+    width: 100%;
+}
+
+#portfolio h1{
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+#portfolio article{
+    background-color: white;
+    padding: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+#portfolio article:not(:last-child){
+    margin-right: 20px;
+}
+
+#portfolio .container article h4.judul{
+    margin-top: 20px;
+}
+
+/* Review */
+
+section#review{
+    padding-bottom: 50px;
+}
+
+section#review h1{
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+section#review .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section#review article:not(:last-child){
+    margin-right: 15px;
+}
+
+section#review article{
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.441);
+    padding: 5px 20px 15px 20px;
+    width: 250px;
+    border-radius: 7px;
+    margin-bottom: 30px;
+}
+
+section#review .people{
+    display: flex;
+    margin-top: 20px;
+}
+
+section#review .imgsatu{
+    background-image: url(img/mumtas.jpg);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-position-x: -7px;
+}
+section#review .imgdua{
+    background-image: url(img/zaini.jpg);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-position-y: -7px;
+}
+section#review .imgtiga{
+    background-image: url(img/david.jpg);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-position-x: -7px;
+}
+
+section#review article p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Aside */
+aside{
+    background-color: #3F4E4F;
+    padding: 30px;
+    color: white;
+}
+
+aside h1{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+aside .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+aside img{
+    margin-right: 30px;
+    width: 200px;
+}
+
+aside table tr td:not(:nth-child(even)){
+    padding-top: 7px;
+    padding-right: 17px;
+}
+
+footer{
+    padding: 15px;
+    background-color: rgb(255, 184, 18);
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.060em;
+}
+
+/* Responsive */
+/* Ukuran Tablet */
+@media screen and (max-width: 1143px) {
+    .container{
+        max-width: 670px;
+    }
+    #home .description{
+        padding: 20px 0;
+        margin-left: 50px;
+    }
+
+    #service .container{
+        max-width: 900px;
+    }
+    
+    .we-service{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .we-service article{
+        width: 300px;
+        margin-bottom: 30px;
+    }
+
+    .we-service ul li i{
+        width: 15px;
+    }
+
+    #review .container{
+        max-width: 900px;
+    }
+
+    section#review article:not(:last-child){
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile */
+ @media screen and (max-width: 895px) {
+    .container{
+        max-width: 100%;
+        padding: 0 30px;
+    }
+
+    #home .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #home .image{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #home .description{
+        width: 80%;
+    }
+
+    nav{
+        position: relative;
+    }
+
+    nav ul{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: orange;
+        top: 70px;
+        right: 0;
+        height: 85vh;
+        padding-bottom: 30px;
+        transition: all 0.3s ease-in-out;
+        transform: translateX(470px);
+    }
+
+    .none{
+        transform: translateX(0);
+    }
+
+    nav ul li{
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li:nth-child(6):hover{
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .box{
+        width: 40px;
+        height: 40px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box input{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+    }
+    
+    main svg{
+        margin-bottom: 50px;
+    }
+    
+    section#review article:last-child{
+        margin-left: -20px;
+    }
+    
+    .box span{
+        display: block;
+        width: 35px;
+        height: 4px;
+        border-radius: 5px;
+        background-color: white;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .box span:not(:last-child){
+        margin-bottom: 5px;
+    }
+
+    .box input:checked ~ span:nth-child(2){
+        transform-origin: 0 100%;
+        transform: rotate(45deg) translate(0.3px, 0);
+    }
+
+    .box input:checked ~ span:nth-child(3){
+        transform: scale(0);
+    }
+
+    .box input:checked ~ span:nth-child(4){
+        transform-origin: 0 100%;
+        transform: rotate(-45deg) translate(-2px, 6px);
+    }
+
+    aside .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    aside .container img{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    aside h3{
+        text-align: center;
+    }
+
+
+}
+
+/* Tambahan */
+@media screen and (max-width: 495px) {
+    section#portfolio article:last-child{
+        margin-left: -20px;
+    }
+}
